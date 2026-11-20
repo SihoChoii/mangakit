@@ -1,0 +1,59 @@
+chapter: '01'
+direction: rtl
+pairing: even-start
+pages:
+- id: p002
+  status: drawn
+  spread: 1
+  after_turn: false
+  panels:
+  - id: platform
+    beat: cold-open
+    lines:
+    - line-01
+    - line-02
+    status: drawn
+  - id: sprint-close
+    beat: sprint
+    lines:
+    - line-03
+    status: drawn
+  - id: sprint-feet
+    beat: sprint
+    lines:
+    - line-04
+    status: drawn
+- id: p003
+  status: drawn
+  spread: 1
+  after_turn: false
+  panels:
+  - id: doors-closing
+    beat: doors-closing
+    lines:
+    - line-16
+    status: drawn
+  - id: handoff
+    beat: give-envelope
+    lines:
+    - line-17
+    - line-18
+    status: drawn
+  - id: train-departs
+    beat: train-departs
+    lines:
+    - line-21
+    - line-19
+    status: drawn
+- id: p004
+  status: drawn
+  spread: 2
+  after_turn: true
+  panels:
+  - id: reveal
+    beat: reveal
+    lines:
+    - line-20
+    status: drawn
+retired: []
+updated: '2026-11-18T18:15:09-08:00'
