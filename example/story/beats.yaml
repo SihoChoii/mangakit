@@ -1,0 +1,49 @@
+# Ordered beats. reader: what this beat adds to what the reader knows / suspects / must not know yet.
+beats:
+- id: cold-open
+  chapter: '01'
+  summary: Night platform, 0:42 a.m. Rin runs for the last train with the envelope under her arm.
+  location: platform-7
+  present: [rin]
+  shows: [envelope]
+  reader: {knows: [last-train, rin-has-envelope]}
+- id: sprint
+  chapter: '01'
+  summary: Rin sprints the length of the platform.
+  location: platform-7
+  present: [rin]
+  shows: [envelope]
+- id: doors-closing
+  chapter: '01'
+  summary: The doors start to close with Rin still on the platform, the envelope clutched to her chest.
+  location: platform-7
+  present: [rin]
+  shows: [envelope]
+- id: give-envelope
+  chapter: '01'
+  summary: Rin thrusts the envelope through the closing doors; an unseen passenger's fingers catch it.
+  location: platform-7
+  present: [rin, saeki]
+  shows: [envelope]
+  asserts: [envelope.holder=saeki]
+  reader: {knows: [envelope-changed-hands, kyoto-deadline], conceals: [recipient-identity]}
+- id: train-departs
+  chapter: '01'
+  summary: The doors shut and the train pulls away. Rin is left on the platform.
+  location: platform-7
+  present: [rin]
+- id: reveal
+  chapter: '01'
+  summary: 'Page turn: on the moving train, Detective Saeki looks at the envelope in his hand.'
+  location: train-departing
+  present: [saeki]
+  shows: [envelope]
+  asserts: [envelope.holder=saeki]
+  reader: {knows: [recipient-identity], suspects: [envelope-is-dangerous]}
+- id: kyoto-arrival
+  chapter: '02'
+  summary: Dawn at Kyoto. Saeki steps off the train with the sealed envelope inside his coat.
+  location: kyoto-station
+  present: [saeki]
+  shows: [envelope]
+  asserts: [envelope.holder=saeki]

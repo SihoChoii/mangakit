@@ -1,0 +1,61 @@
+# Who and what exists. Character ids are the only valid speakers.
+characters:
+- id: rin
+  name: Rin Asano
+  role: courier, recurring lead
+  design: rin-design            # reference id that owns her look (design skill)
+- id: saeki
+  name: Kei Saeki
+  role: detective; the recipient, unseen until the reveal
+  design: saeki-design
+- id: kuroda
+  name: Tetsu Kuroda
+  role: the client who hired Rin; first appears in chapter 02
+props:
+- id: envelope
+  name: sealed manila envelope
+  design: envelope-design
+locations:
+- id: platform-7
+  name: Shinjuku platform 7
+  design: train-door-env
+  adjacent: [train-car-3]       # within arm's reach through the doors
+- id: train-car-3
+  name: last train, car 3 (standing at platform 7)
+  design: train-door-env
+  adjacent: [platform-7]
+- id: train-departing
+  name: last train, car 3 (moving)
+  design: train-door-env
+- id: kyoto-station
+  name: Kyoto station, platform at dawn
+# Facts the reader can learn. keywords are words that would leak the fact if a line used them early.
+facts:
+- id: last-train
+  statement: This is the last train of the night.
+  about: [train-car-3]
+- id: rin-has-envelope
+  statement: Rin carries the envelope.
+  about: [rin, envelope]
+- id: envelope-changed-hands
+  statement: Rin passed the envelope through the doors to someone on the train.
+  about: [envelope, rin]
+- id: kyoto-deadline
+  statement: The envelope must stay sealed until Kyoto.
+  about: [envelope]
+  keywords: [Kyoto]
+- id: recipient-identity
+  statement: The person who took the envelope is Detective Kei Saeki.
+  about: [saeki]
+  keywords: [Saeki, Kei, detective, inspector]
+  reveal: reveal
+- id: envelope-is-dangerous
+  statement: Whatever is in the envelope is why Rin is running.
+  about: [envelope, rin]
+# Continuity state before the first beat; story/continuity.yaml changes it.
+initial:
+- {subject: envelope, attribute: holder, value: rin}
+- {subject: rin, attribute: location, value: platform-7}
+- {subject: saeki, attribute: location, value: train-car-3}
+- {subject: rin, attribute: costume, value: courier-jacket}
+- {subject: saeki, attribute: costume, value: dark-overcoat}

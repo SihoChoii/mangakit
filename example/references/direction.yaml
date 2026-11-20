@@ -1,0 +1,56 @@
+revisions:
+- id: sr-001
+  effective:
+    chapter: '01'
+  based_on: null
+  note: 'Example direction: text rules only. Add style cards (`mangakit ref add ... --kind style`, then
+    cards: [<ref>@<ver>#<view>]) once you have accepted art.'
+  rules:
+    line-weight:
+      kind: line-weight
+      text: fine, even pen contours of one weight (about 1/400 of the image width); no brush swell; interior
+        detail lines thinner than contours
+      cards: []
+      brief: true
+      render:
+        styles:
+          panel-border:
+            width: 4.5
+          balloon:
+            width: 2.4
+    tone-density:
+      kind: tone-density
+      text: large flat solid blacks (clothes, door gap, night) with faint texture; shadows by fine parallel
+        hatching; open white paper elsewhere; no dot screentone, no gray wash
+      cards: []
+      brief: true
+    motifs:
+      kind: motif
+      text: the vertical black door gap as a dividing slit; the round black wax seal with a leaf sprig;
+        white ribbed cuff against a black sleeve
+      cards: []
+      brief: false
+    type:
+      kind: type
+      text: dialogue in ComicNeue Bold uppercase at 21 units, emphasis in Bold Italic, captions in square
+        boxes
+      cards: []
+      render:
+        lettering:
+          font_size: 21
+          line_height: 1.12
+          uppercase: true
+    sfx:
+      kind: sfx
+      text: SFX in Bangers, black with a white outline, tilted -4 to -8 degrees, never over faces or hands
+      cards: []
+      render:
+        sfx:
+          font: sfx
+          outline: '#ffffff'
+          outline_width: 6.0
+    title:
+      kind: title
+      text: chapter title in the caption font, uppercase, wide tracking, a thin rule under it
+      cards: []
+guide: Last Train - art direction (example)
