@@ -1,0 +1,55 @@
+# The script owns wording. kind: speech | thought | caption | sfx. speaker: a canon character id
+# (captions and SFX have none). Line ids are stable; never renumber.
+lines:
+- id: line-01
+  beat: cold-open
+  kind: caption
+  text: Shinjuku line. 0:42 a.m.
+- id: line-02
+  beat: cold-open
+  kind: speech
+  speaker: rin
+  text: Come on, come on...
+- id: line-03
+  beat: sprint
+  kind: speech
+  speaker: rin
+  text: Don't you *dare* leave without me.
+- id: line-04
+  beat: sprint
+  kind: sfx
+  text: TAP TAP TAP
+- id: line-16
+  beat: doors-closing
+  kind: speech
+  speaker: rin
+  text: Hold the door!
+- id: line-17
+  beat: give-envelope
+  kind: speech
+  speaker: rin
+  text: Take it! *Don't* open it before Kyoto!
+  reveals: [kyoto-deadline]
+- id: line-18
+  beat: give-envelope
+  kind: speech
+  speaker: saeki
+  text: Got it.
+- id: line-21
+  beat: train-departs
+  kind: sfx
+  text: KSSHHH
+- id: line-19
+  beat: train-departs
+  kind: speech
+  speaker: rin
+  text: "...Keep it safe."
+- id: line-20
+  beat: reveal
+  kind: speech
+  speaker: saeki
+  text: So this is what you were running from.
+- id: line-22
+  beat: kyoto-arrival
+  kind: caption
+  text: Kyoto. 5:51 a.m.

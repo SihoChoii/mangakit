@@ -1,0 +1,20 @@
+# Setups and payoffs, linked by id. setup/payoff: a beat id, {beat: id} or {line: id}.
+# A setup paid off in a later chapter says deferred: <where>.
+threads:
+- id: t-mystery-hand
+  description: Whose hand took the envelope?
+  setup: {beat: give-envelope}
+  payoff: {beat: reveal}
+  reveals: recipient-identity
+- id: t-last-train
+  description: Will she make the last train?
+  setup: {line: line-01}
+  payoff: {beat: train-departs}
+- id: t-running
+  description: Why is she running?
+  setup: {beat: sprint}
+  payoff: {line: line-20}
+- id: t-kyoto
+  description: What happens at Kyoto?
+  setup: {line: line-17}
+  deferred: chapter 02

@@ -1,0 +1,13 @@
+# What the chapter is for. The story skill reads this before anything else.
+title: Last Train
+logline: A courier misses the last train but gets her envelope aboard, and the hand that takes it belongs to a detective.
+premise: >
+  Rin Asano carries a sealed envelope that someone wants badly. She sprints for the last train,
+  is shut out by the doors, and pushes the envelope through the gap to a waiting hand. The page
+  turn shows whose hand it was.
+audience: teen and up
+length: {chapter: '01', pages: 3, target_beats: 6}
+tone: night-time noir, quiet, one loud moment
+goals:
+- A reader can say who holds the envelope at every point, and when it changed hands.
+- The recipient's identity is the page-turn reveal.

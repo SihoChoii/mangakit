@@ -1,0 +1,26 @@
+# Each event: the story fact (subject.attribute) that changes, its new value, and the beat where it changes.
+events:
+- id: ev-envelope-transfer
+  beat: give-envelope
+  subject: envelope
+  attribute: holder
+  from: rin
+  value: saeki
+- id: ev-saeki-departs
+  beat: train-departs
+  subject: saeki
+  attribute: location
+  from: train-car-3
+  value: train-departing
+- id: ev-saeki-arrives
+  beat: kyoto-arrival
+  subject: saeki
+  attribute: location
+  from: train-departing
+  value: kyoto-station
+- id: ev-saeki-raincoat
+  beat: kyoto-arrival
+  subject: saeki
+  attribute: costume
+  from: dark-overcoat
+  value: grey-raincoat
